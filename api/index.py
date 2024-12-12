@@ -77,6 +77,3 @@ def download_file(filename):
         return send_from_directory(UPLOAD_FOLDER, f"{filename}.png", as_attachment=True)
     else:
         return "File not found.", 404
-
-if __name__ == '__main__':
-    app.run()
